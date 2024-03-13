@@ -35,3 +35,15 @@ int m = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine("Введите число N: ");
 int n = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(AkkermanFunction(m,n));
+
+// Задание 3
+void ReverseArray(int[] arr, int iter = 0)
+{
+    if (iter < arr.Length)
+    {
+        ReverseArray(arr, iter + 1);
+        Console.Write($"{arr[iter]}, ");
+    }
+}
+int[] arr = [1, 7, 12, 44, 55, 78, 99];
+ReverseArray(arr);
